@@ -7,6 +7,7 @@ const mailSchema = new mongoose.Schema({
   },
   email: {
     type: String,
+    unique: true,
     required: [true, "Must have an email"],
   },
   message: {
