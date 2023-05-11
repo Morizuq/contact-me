@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-const favicon = require("serve-favicon");
+import { Request, Response } from "express";
 
 require("dotenv").config();
 
@@ -11,7 +11,7 @@ const app = express();
 
 const port = process.env.PORT || 3412;
 
-app.use(favicon(path.join(__dirname, "public", "favicon.ico")));
+app.get("/favicon", (req: Request, res: Response) => res.status(204));
 
 app.use(express.json());
 

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start":"node ./dist/index.js"
+    "start": "node ./dist/index.js"
   },
   "author": "Morizuq",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "html-to-text": "^9.0.5",
     "mongoose": "^7.1.0",
     "nodemailer": "^6.9.1",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "serve-favicon": "^2.5.0"
   }
 }
